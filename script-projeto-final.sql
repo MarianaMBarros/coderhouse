@@ -58,7 +58,7 @@ CREATE TABLE shows (
     duration_id int NULL,
     description	 varchar(3000) NULL,
     CONSTRAINT pk_netflix PRIMARY KEY (id),
-	FOREIGN KEY (content_type_id) REFERENCES content_type(id),
+    FOREIGN KEY (content_type_id) REFERENCES content_type(id),
     FOREIGN KEY (country_id) REFERENCES country(id),
     FOREIGN KEY (release_year_id) REFERENCES release_year(id),
     FOREIGN KEY (rating_id) REFERENCES rating(id),
