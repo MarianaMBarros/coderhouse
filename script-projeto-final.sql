@@ -78,3 +78,5 @@ CREATE TABLE shows(
         FOREIGN KEY (listed_in_id) REFERENCES listed_in(id),
         FOREIGN KEY (shows_id) REFERENCES shows(id)
 	);
+
+    
