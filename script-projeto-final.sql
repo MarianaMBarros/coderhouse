@@ -31,11 +31,6 @@ CREATE TABLE release_year(
     CONSTRAINT pk_release_year PRIMARY KEY(id)
     );
 
-CREATE TABLE director(
-	id int NOT NULL,
-    nome VARCHAR(100) NOT NULL,
-    CONSTRAINT pk_director PRIMARY KEY (id)
-    );
 
 CREATE TABLE shows(
 	id INT NOT NULL,
@@ -53,6 +48,13 @@ CREATE TABLE shows(
     FOREIGN KEY (duration_id) REFERENCES duration(id),
     FOREIGN KEY (content_type_id) REFERENCES content_type(id),
     FOREIGN KEY (rating_id) REFERENCES rating(id)
+    );
+    
+    
+CREATE TABLE director(
+	id int NOT NULL,
+    nome VARCHAR(100) NOT NULL,
+    CONSTRAINT pk_director PRIMARY KEY (id)
     );
     
     CREATE TABLE shows_director(
