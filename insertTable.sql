@@ -96,8 +96,6 @@ insert into shows (id,content_type_id, title, cast, country_id, date_added, rele
 insert into shows (id,content_type_id, title, cast, country_id, date_added, release_year, rating_id ,duration_id, description) 
 	values (10, 1, 'The Starling', 'Melissa McCarthy', 7, '2021-09-12', 10, 1, 9, 'A woman adjusting to life after a loss contends with a feisty bird that taken over her garden — and a husband who struggling to find a way forward.');
 
-
-
 insert into shows_director (id,shows_id,director_id) values (1, 1, 1);
 insert into shows_director (id,shows_id,director_id) values (2, 2, 2);
 insert into shows_director (id,shows_id,director_id) values (3, 3, 3);
